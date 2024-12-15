@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Memory Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>In-Memory Database</h1>
+
+        <form id="addForm">
+            <h3>Add Employee</h3>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <button type="submit">Add Employee</button>
+        </form>
+
+        <form id="getForm">
+            <h3>Get Employee by ID</h3>
+            <input type="number" id="getId" placeholder="Enter ID" required>
+            <button type="submit">Get Employee</button>
+        </form>
+
+        <form id="updateForm">
+            <h3>Update Employee</h3>
+            <input type="number" id="updateId" placeholder="ID" required>
+            <input type="text" id="updateName" placeholder="New Name">
+            <input type="number" id="updateAge" placeholder="New Age">
+            <button type="submit">Update Employee</button>
+        </form>
+
+        <form id="deleteForm">
+            <h3>Delete Employee by ID</h3>
+            <input type="number" id="deleteId" placeholder="Enter ID" required>
+            <button type="submit">Delete Employee</button>
+        </form>
+
+        <div class="button-container">
+            <button onclick="clearAllEmployees()">Clear All Employees</button>
+            <button onclick="displayAllEmployees()">Show All Employees</button>
+        </div>
+
+        <div id="output" class="output"></div>
+    </div>
+
+<script src="frontend.js"></script>  
+</body>
+
+</html>
